@@ -984,6 +984,7 @@
   padding: 15px 30px;
   font-size: 1.1rem;
   text-decoration: none;
+  white-space: nowrap;
 }
 
 .topics__item {
@@ -1010,6 +1011,13 @@
   .topics-section__inner {
     padding: 0 30px;
   }
+  
+  /* モバイルでのボタン表示調整 */
+  .topics-back .btn {
+    padding: 12px 20px;
+    font-size: 1rem;
+    min-width: 200px;
+  }
 }
 @media (max-width: 480px) {
   .topics-hero__inner {
@@ -1017,6 +1025,13 @@
   }
   .topics-section__inner {
     padding: 0 20px;
+  }
+  
+  /* 小さい画面でのボタン表示調整 */
+  .topics-back .btn {
+    padding: 10px 16px;
+    font-size: 0.9rem;
+    min-width: 180px;
   }
 }
 .about-hero {
