@@ -1496,6 +1496,26 @@ main {
   width: 100%;
   background: #eaebe6;
 }
+
+/* モバイル表示での背景色調整 */
+@media (max-width: 768px) {
+  .topics__inner::before {
+    height: 101%;
+    top: -20px;
+    bottom: auto;
+    padding: 20px 0;
+  }
+}
+
+/* 小さい画面での背景色調整 */
+@media (max-width: 480px) {
+  .topics__inner::before {
+    height: 104%;
+    top: -20px;
+    bottom: auto;
+    padding: 20px 0;
+  }
+}
 .topics__container {
   position: relative;
   z-index: 2;
