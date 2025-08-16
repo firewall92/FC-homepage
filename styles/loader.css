@@ -1,0 +1,227 @@
+.pace-done #global-container {
+  transition: opacity 1s;
+  opacity: 1;
+}
+
+#global-container {
+  opacity: 0;
+}
+
+.pace {
+  z-index: 2000;
+  position: fixed;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.pace .pace-progress {
+  transform: none !important;
+  text-align: center;
+  margin-bottom: 30px;
+  /* progress要素自体は表示する */
+  display: block !important;
+}
+
+.pace .pace-progress::after {
+  content: "FC MEC";
+  display: block;
+  font-weight: 700;
+  font-size: 2.5em;
+  font-family: "Kameron", "Helvetica Neue", "Yu Gothic", "Meiryo", sans-serif;
+  color: #ffffff;
+  letter-spacing: 0.1em;
+  text-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+  animation: textGlow 2s ease-in-out infinite alternate;
+  /* 初期状態では完全に非表示 */
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.8s ease-in, visibility 0.8s ease-in;
+}
+
+/* カスタムローダーが準備できた後にテキストを表示 */
+.pace.loader-ready .pace-progress::after {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* index.html専用のloading時間設定 */
+.pace.index-page .pace-progress::after {
+  transition: opacity 1.5s ease-in, visibility 1.5s ease-in;
+}
+
+.pace.index-page.loader-ready .pace-progress::after {
+  opacity: 1;
+  visibility: visible;
+}
+
+.pace.pace-inactive {
+  display: none;
+}
+
+/* カスタムローダーが確実に表示されるように */
+#custom-loading-animation {
+  display: block !important;
+  opacity: 1 !important;
+}
+
+/* メインのローディングアニメーション */
+.loading-animation {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+  display: block;
+}
+
+/* 外側の円 */
+.loading-circle {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 3px solid transparent;
+  border-top: 3px solid #ffffff;
+  border-radius: 50%;
+  animation: spin 1.5s linear infinite;
+}
+
+/* 内側の円 */
+.loading-circle-inner {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 60px;
+  height: 60px;
+  border: 2px solid transparent;
+  border-right: 2px solid #ffffff;
+  border-radius: 50%;
+  animation: spin 1s linear infinite reverse;
+}
+
+/* 中心のドット */
+.loading-dot {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 8px;
+  height: 8px;
+  background: #ffffff;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  animation: pulse 1.5s ease-in-out infinite;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+}
+
+/* サッカーボールの模様 */
+.loading-pattern {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px;
+}
+
+.loading-pattern::before,
+.loading-pattern::after {
+  content: '';
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: #ffffff;
+  border-radius: 50%;
+  animation: patternMove 2s ease-in-out infinite;
+}
+
+.loading-pattern::before {
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  animation-delay: 0s;
+}
+
+.loading-pattern::after {
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  animation-delay: 1s;
+}
+
+/* アニメーション定義 */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.5);
+    opacity: 0.7;
+  }
+}
+
+@keyframes patternMove {
+  0%, 100% {
+    transform: translateX(-50%) scale(1);
+    opacity: 0.5;
+  }
+  50% {
+    transform: translateX(-50%) scale(1.2);
+    opacity: 1;
+  }
+}
+
+@keyframes textGlow {
+  0% {
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+  }
+  100% {
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.6), 0 0 40px rgba(255, 255, 255, 0.3);
+  }
+}
+
+/* 古いアニメーション要素を非表示 */
+.pace-progress-inner {
+  display: none;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 768px) {
+  .pace .pace-progress::after {
+    font-size: 2em;
+  }
+  
+  .loading-animation {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .loading-circle-inner {
+    top: 8px;
+    left: 8px;
+    width: 44px;
+    height: 44px;
+  }
+  
+  .loading-pattern {
+    width: 30px;
+    height: 30px;
+  }
+}

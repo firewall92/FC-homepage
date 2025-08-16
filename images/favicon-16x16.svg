@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景円 -->
+  <circle cx="8" cy="8" r="7" fill="#1a1a1a" stroke="#ffffff" stroke-width="1"/>
+  
+  <!-- M文字（シンプル化） -->
+  <path d="M4 11L4 5L6 8L8 5L10 8L12 5L12 11" stroke="#ffffff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="180" height="180" viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景円 -->
+  <circle cx="90" cy="90" r="85" fill="#1a1a1a" stroke="#ffffff" stroke-width="5"/>
+  
+  <!-- M文字 -->
+  <path d="M45 123.75L45 56.25L67.5 90L90 56.25L112.5 90L135 56.25L135 123.75" stroke="#ffffff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- サッカーボールの模様 -->
+  <circle cx="90" cy="45" r="6" fill="#ffffff"/>
+  <circle cx="90" cy="135" r="6" fill="#ffffff"/>
+  <circle cx="45" cy="90" r="6" fill="#ffffff"/>
+  <circle cx="135" cy="90" r="6" fill="#ffffff"/>
+  
+  <!-- 装飾的な要素 -->
+  <circle cx="90" cy="90" r="15" fill="none" stroke="#ffffff" stroke-width="3" opacity="0.3"/>
+</svg>

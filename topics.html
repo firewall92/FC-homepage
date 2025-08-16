@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>TOPICS - FC MEC</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.svg" />
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png" />
+    <script src="scripts/vendors/pace.js"></script>
+    <link rel="stylesheet" href="styles/loader.css" />
+    <script src="scripts/libs/custom-loader.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Kameron:wght@400;700&family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles/vendors/css-reset.css" />
+    <link rel="stylesheet" href="styles/vendors/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+
+    <script src="scripts/vendors/gsap.min.js" defer></script>
+    <script src="scripts/vendors/swiper-bundle.min.js" defer></script>
+    <script src="scripts/libs/hero-slider.js" defer></script>
+    <script src="scripts/vendors/scroll-polyfill.js" defer></script>
+    <script src="scripts/libs/scroll.js" defer></script>
+    <script src="scripts/libs/mobile-menu.js" defer></script>
+    <script src="scripts/libs/text-animation.js" defer></script>
+    <script src="scripts/libs/smooth-scroll.js" defer></script>
+    <script src="scripts/main.js" defer></script>
+  </head>
+  <body>
+    <div id="global-container">
+      <div id="container">
+        <div class="mobile-menu__cover"></div>
+        <div class="nav-trigger"></div>
+        <header class="header">
+          <div class="header__inner appear up">
+            <div class="logo item">
+              <img class="logo__img" src="images/favicon.svg" />
+              <span class="logo__stay">FC</span>
+              <span class="logo__world">MEC</span>
+            </div>
+            <nav class="header__nav">
+              <ul class="header__ul">
+                <li class="header__li item"><a href="index.html">TOP</a></li>
+                <li class="header__li item"><a href="about.html">About</a></li>
+                <li class="header__li item"><a href="topics.html">Topics</a></li>
+                <li class="header__li item"><a href="gallery.html">Gallery</a></li>
+                <!-- <li class="header__li item"><a class="btn filled" href="gallery.html">Gallery</a></li> -->
+              </ul>
+            </nav>
+            <button class="mobile-menu__btn">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+        </header>
+        <div id="content">
+          <div class="topics-hero">
+            <div class="topics-hero__inner">
+              <h1 class="topics-hero__title main-title appear up">TOPICS</h1>
+              <p class="topics-hero__subtitle">チームの日記・ニュース</p>
+            </div>
+          </div>
+          <div id="main-content">
+            <main>
+              <section class="topics-section">
+                <div class="topics-section__inner">
+                  <div class="topics__inner appear up">
+                    <div class="topics__container">
+                      <div class="topics__item item" onclick="location.href='topic-detail.html?id=1'">
+                        <div class="topics__img">
+                          <img src="images/gallery4.jpg" alt="リーグ戦 vs 強豪チーム" />
+                        </div>
+                        <div class="topics__content">
+                          <p class="topics__date">2025.01.15</p>
+                          <p class="topics__title">リーグ戦 vs 強豪チーム</p>
+                        </div>
+                      </div>
+                      <div class="topics__item item" onclick="location.href='topic-detail.html?id=2'">
+                        <div class="topics__img">
+                          <img src="images/gallery4.jpg" alt="練習風景" />
+                        </div>
+                        <div class="topics__content">
+                          <p class="topics__date">2025.01.10</p>
+                          <p class="topics__title">練習風景</p>
+                        </div>
+                      </div>
+                      <div class="topics__item item" onclick="location.href='topic-detail.html?id=3'">
+                        <div class="topics__img">
+                          <img src="images/gallery4.jpg" alt="新年会" />
+                        </div>
+                        <div class="topics__content">
+                          <p class="topics__date">2025.01.05</p>
+                          <p class="topics__title">新年会</p>
+                        </div>
+                      </div>
+                      <div class="topics__item item" onclick="location.href='topic-detail.html?id=4'">
+                        <div class="topics__img">
+                          <img src="images/gallery4.jpg" alt="試合前の集合写真" />
+                        </div>
+                        <div class="topics__content">
+                          <p class="topics__date">2024.12.20</p>
+                          <p class="topics__title">試合前の集合写真</p>
+                        </div>
+                      </div>
+                      <div class="topics__item item" onclick="location.href='topic-detail.html?id=5'">
+                        <div class="topics__img">
+                          <img src="images/gallery4.jpg" alt="遠征試合" />
+                        </div>
+                        <div class="topics__content">
+                          <p class="topics__date">2024.12.15</p>
+                          <p class="topics__title">遠征試合</p>
+                        </div>
+                      </div>
+                      <div class="topics__item item" onclick="location.href='topic-detail.html?id=6'">
+                        <div class="topics__img">
+                          <img src="images/gallery4.jpg" alt="大会結果" />
+                        </div>
+                        <div class="topics__content">
+                          <p class="topics__date">2024.12.10</p>
+                          <p class="topics__title">大会結果</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="topics-back appear up">
+                    <a href="index.html" class="btn filled">トップに戻る</a>
+                  </div>
+                </div>
+              </section>
+            </main>
+          </div>
+        </div>
+        <div class="footer appear up">
+          <div class="logo item">
+            <img class="logo__img" src="images/favicon.svg" />
+            <span class="logo__stay">FC</span>
+            <span class="logo__world">MEC</span>
+          </div>
+          <nav class="footer__nav">
+            <ul class="footer__ul">
+              <li class="footer__li item"><a href="index.html">TOP</a></li>
+              <li class="footer__li item"><a href="about.html">About</a></li>
+              <li class="footer__li item"><a href="topics.html">Topics</a></li>
+              <li class="footer__li item"><a href="gallery.html">Gallery</a></li>
+            </ul>
+            <div class="footer__copyright item">⚽ FC MEC</div>
+          </nav>
+        </div>
+      </div>
+      <nav class="mobile-menu">
+        <div class="logo">
+          <img class="logo__img" src="images/favicon.svg" />
+          <span class="logo__stay">FC</span>
+          <span class="logo__world">MEC</span>
+        </div>
+        <ul class="mobile-menu__main">
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="index.html">
+              <span class="main-title">Home</span>
+              <span class="sub-title">ホーム</span>
+            </a>
+          </li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="about.html">
+              <span class="main-title">About Our Team</span>
+              <span class="sub-title">チームについて</span>
+            </a>
+          </li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="topics.html">
+              <span class="main-title">Topics</span>
+              <span class="sub-title">トピックス</span>
+            </a>
+          </li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="gallery.html">
+              <span class="main-title">Gallery</span>
+              <span class="sub-title">ギャラリー</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </body>
+</html>

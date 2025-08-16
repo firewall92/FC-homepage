@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>記事詳細 - FC MEC</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.svg" />
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png" />
+    <script src="scripts/vendors/pace.js"></script>
+    <link rel="stylesheet" href="styles/loader.css" />
+    <script src="scripts/libs/custom-loader.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Kameron:wght@400;700&family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles/vendors/css-reset.css" />
+    <link rel="stylesheet" href="styles/vendors/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+
+    <script src="scripts/vendors/gsap.min.js" defer></script>
+    <script src="scripts/vendors/swiper-bundle.min.js" defer></script>
+    <script src="scripts/libs/hero-slider.js" defer></script>
+    <script src="scripts/vendors/scroll-polyfill.js" defer></script>
+    <script src="scripts/libs/scroll.js" defer></script>
+    <script src="scripts/libs/mobile-menu.js" defer></script>
+    <script src="scripts/libs/text-animation.js" defer></script>
+    <script src="scripts/libs/smooth-scroll.js" defer></script>
+    <script src="scripts/main.js" defer></script>
+  </head>
+  <body>
+    <div id="global-container">
+      <div id="container">
+        <div class="mobile-menu__cover"></div>
+        <div class="nav-trigger"></div>
+        <header class="header">
+          <div class="header__inner appear up">
+            <div class="logo item">
+              <img class="logo__img" src="images/favicon.svg" />
+              <span class="logo__stay">FC</span>
+              <span class="logo__world">MEC</span>
+            </div>
+            <nav class="header__nav">
+              <ul class="header__ul">
+                <li class="header__li item"><a href="index.html">TOP</a></li>
+                <li class="header__li item"><a href="about.html">About</a></li>
+                <li class="header__li item"><a href="topics.html">Topics</a></li>
+                <li class="header__li item"><a href="gallery.html">Gallery</a></li>
+              </ul>
+            </nav>
+            <button class="mobile-menu__btn">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+        </header>
+        <div id="content">
+          <div id="main-content">
+            <main>
+              <section class="article-section">
+                <div class="article-section__inner">
+                  <article class="article">
+                    <header class="article__header">
+                      <div class="article__meta">
+                        <time class="article__date" id="article-date">2025.01.15</time>
+                        <h1 class="article__title main-title" id="article-title">リーグ戦 vs 強豪チーム</h1>
+                      </div>
+                      <div class="article__image">
+                        <img id="article-image" src="images/gallery4.jpg" alt="リーグ戦 vs 強豪チーム" />
+                      </div>
+                    </header>
+                    <div class="article__content">
+                      <div id="article-body">
+                        <p>激戦の末、勝利を収めました。チームワークの素晴らしさが光った試合でした。</p>
+                        <p>試合開始前から緊張感が漂う中、私たちはチームとしての結束力を高め、勝利への意志を固めていました。</p>
+                        <p>前半は相手の攻撃に押され気味でしたが、守備陣の連携が素晴らしく、失点を防ぎ切りました。</p>
+                        <p>後半に入り、私たちの攻撃が徐々に形になり始めました。中盤の選手たちのボール回しが良くなり、前線へのチャンスが増えていきます。</p>
+                        <p>そして試合終了間際、素晴らしい連携プレーから得点を奪い、見事な逆転勝利を収めることができました。</p>
+                        <p>この勝利は、日頃の練習の成果と、チームメンバー全員の努力の賜物です。今後もこの調子で頑張っていきたいと思います。</p>
+                      </div>
+                    </div>
+                    <footer class="article__footer">
+                      <div class="article__navigation">
+                        <a href="topics.html" class="btn">TOPICS一覧に戻る</a>
+                        <a href="index.html" class="btn filled">トップに戻る</a>
+                      </div>
+                    </footer>
+                  </article>
+                </div>
+              </section>
+            </main>
+          </div>
+        </div>
+        <div class="footer appear up">
+          <div class="logo item">
+            <img class="logo__img" src="images/favicon.svg" />
+            <span class="logo__stay">FC</span>
+            <span class="logo__world">MEC</span>
+          </div>
+          <nav class="footer__nav">
+            <ul class="footer__ul">
+              <li class="footer__li item"><a href="index.html">TOP</a></li>
+              <li class="footer__li item"><a href="about.html">About</a></li>
+              <li class="footer__li item"><a href="topics.html">Topics</a></li>
+              <li class="footer__li item"><a href="gallery.html">Gallery</a></li>
+            </ul>
+            <div class="footer__copyright item">⚽ FC MEC</div>
+          </nav>
+        </div>
+      </div>
+      <nav class="mobile-menu">
+        <div class="logo">
+          <img class="logo__img" src="images/favicon.svg" />
+          <span class="logo__stay">FC</span>
+          <span class="logo__world">MEC</span>
+        </div>
+        <ul class="mobile-menu__main">
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="index.html">
+              <span class="main-title">Home</span>
+              <span class="sub-title">ホーム</span>
+            </a>
+          </li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="about.html">
+              <span class="main-title">About Our Team</span>
+              <span class="sub-title">チームについて</span>
+            </a>
+          </li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="topics.html">
+              <span class="main-title">Topics</span>
+              <span class="sub-title">トピックス</span>
+            </a>
+          </li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="gallery.html">
+              <span class="main-title">Gallery</span>
+              <span class="sub-title">ギャラリー</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <script>
+      // URLパラメータから記事IDを取得して記事内容を表示
+      document.addEventListener("DOMContentLoaded", function () {
+        const urlParams = new URLSearchParams(window.location.search);
+        const articleId = urlParams.get("id");
+
+        // 記事IDに応じて内容を変更
+        const articles = {
+          1: {
+            title: "リーグ戦 vs 強豪チーム",
+            date: "2025.01.15",
+            image: "images/gallery4.jpg",
+            content: `
+              <p>激戦の末、勝利を収めました。チームワークの素晴らしさが光った試合でした。</p>
+              <p>試合開始前から緊張感が漂う中、私たちはチームとしての結束力を高め、勝利への意志を固めていました。</p>
+              <p>前半は相手の攻撃に押され気味でしたが、守備陣の連携が素晴らしく、失点を防ぎ切りました。</p>
+              <p>後半に入り、私たちの攻撃が徐々に形になり始めました。中盤の選手たちのボール回しが良くなり、前線へのチャンスが増えていきます。</p>
+              <p>そして試合終了間際、素晴らしい連携プレーから得点を奪い、見事な逆転勝利を収めることができました。</p>
+              <p>この勝利は、日頃の練習の成果と、チームメンバー全員の努力の賜物です。今後もこの調子で頑張っていきたいと思います。</p>
+            `,
+          },
+          2: {
+            title: "練習風景",
+            date: "2025.01.10",
+            image: "images/gallery4.jpg",
+            content: `
+              <p>基本技術の向上を目指して、集中した練習を行いました。</p>
+              <p>今日は特にパスワークとドリブルに重点を置いた練習メニューを組んでいました。</p>
+              <p>選手たちは真剣な表情で練習に取り組み、技術の向上を実感していました。</p>
+              <p>練習後には、チーム全体で今日の成果を振り返り、次回の練習への課題を確認しました。</p>
+            `,
+          },
+          3: {
+            title: "新年会",
+            date: "2025.01.05",
+            image: "images/gallery4.jpg",
+            content: `
+              <p>新年を迎え、チームメンバーと新年会を開催しました。</p>
+              <p>昨年の成果を振り返りながら、今年の目標についても話し合いました。</p>
+              <p>チームの結束力がさらに高まり、良いスタートを切ることができました。</p>
+              <p>今年も頑張っていきましょう！</p>
+            `,
+          },
+          4: {
+            title: "試合前の集合写真",
+            date: "2024.12.20",
+            image: "images/gallery4.jpg",
+            content: `
+              <p>重要な試合を前に、チームの士気を高めました。</p>
+              <p>集合写真を撮影し、チームの一体感を確認しました。</p>
+              <p>全員が勝利への意志を固め、試合に臨みました。</p>
+            `,
+          },
+          5: {
+            title: "遠征試合",
+            date: "2024.12.15",
+            image: "images/gallery4.jpg",
+            content: `
+              <p>遠征先での試合で、チームの結束力が試されました。</p>
+              <p>慣れない環境でしたが、チームメンバー全員が協力し合い、良い結果を残すことができました。</p>
+              <p>遠征を通じて、チームの絆がさらに深まりました。</p>
+            `,
+          },
+          6: {
+            title: "大会結果",
+            date: "2024.12.10",
+            image: "images/gallery4.jpg",
+            content: `
+              <p>大会で好成績を収め、チームの成長を実感しました。</p>
+              <p>日頃の練習の成果が実り、素晴らしい結果を残すことができました。</p>
+              <p>この経験を活かして、さらに上を目指していきたいと思います。</p>
+            `,
+          },
+        };
+
+        if (articles[articleId]) {
+          const article = articles[articleId];
+          document.getElementById("article-title").textContent = article.title;
+          document.getElementById("article-date").textContent = article.date;
+          document.getElementById("article-image").src = article.image;
+          document.getElementById("article-image").alt = article.title;
+          document.getElementById("article-body").innerHTML = article.content;
+          document.title = article.title + " - FC MEC";
+        }
+      });
+    </script>
+  </body>
+</html>
