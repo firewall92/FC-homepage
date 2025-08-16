@@ -75,6 +75,7 @@
   background-color: black;
   color: white;
   box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
+  white-space: nowrap;
 }
 .btn.filled:hover {
   background-color: white;
@@ -870,6 +871,7 @@
   transform: translate(-50%, -50%) !important;
   float: none !important;
   clear: both !important;
+  white-space: nowrap !important;
 }
 
 .footer {
@@ -935,6 +937,17 @@
     gap: 15px;
   }
 }
+
+/* 330px以下の画面でのボタン表示調整 */
+@media (max-width: 330px) {
+  .gallery-section .gallery-back .btn,
+  .topics-back .btn,
+  .article__navigation .btn {
+    padding: 10px 16px !important;
+    font-size: 0.9rem !important;
+    min-width: 160px !important;
+  }
+}
 .topics-hero {
   height: 35vh;
   display: flex;
@@ -979,7 +992,8 @@
   align-items: center;
   width: 100%;
 }
-.topics-back .btn {
+.topics-back .btn,
+.article__navigation .btn {
   display: inline-block;
   padding: 15px 30px;
   font-size: 1.1rem;
@@ -1013,7 +1027,8 @@
   }
   
   /* モバイルでのボタン表示調整 */
-  .topics-back .btn {
+  .topics-back .btn,
+  .article__navigation .btn {
     padding: 12px 20px;
     font-size: 1rem;
     min-width: 200px;
@@ -1028,7 +1043,8 @@
   }
   
   /* 小さい画面でのボタン表示調整 */
-  .topics-back .btn {
+  .topics-back .btn,
+  .article__navigation .btn {
     padding: 10px 16px;
     font-size: 0.9rem;
     min-width: 180px;
